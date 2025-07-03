@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Favour Findy</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Google Fonts - Inter -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #f0f2f5; /* Light gray background */
+            color: #333;
+        }
+        .section-title {
+            position: relative;
+            display: inline-block;
+            padding-bottom: 8px;
+            margin-bottom: 2rem;
+        }
+        .section-title::after {
+            content: '';
+            position: absolute;
+            left: 0;
+            bottom: 0;
+            width: 60%;
+            height: 3px;
+            background-color: #fedb27; /* Yellow accent */
+            border-radius: 9999px;
+        }
+        .card {
+            background-color: #ffffff;
+            border-radius: 0.75rem; /* rounded-xl */
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* shadow-md */
+            transition: transform 0.2s ease-in-out;
+        }
+        .card:hover {
+            transform: translateY(-5px);
+        }
+    </style>
+</head>
+<body class="antialiased">
+
+    <!-- Header/Navigation -->
+    <header class="bg-[#085158] shadow-md py-4 px-6 md:px-12 fixed top-0 left-0 w-full z-10">
+        <nav class="container mx-auto flex justify-between items-center">
+            <img src="/Favour findy.png" alt="logo" class="w-40">
+            <!-- <a href="#" class="text-2xl font-bold text-gray-800 rounded-md p-2 hover:bg-gray-100 transition-colors">Favour Findy</a> -->
+            <div class="hidden md:flex space-x-6">
+                <a href="#about" class="text-white hover:text-[#085158]font-medium rounded-md p-2 hover:bg-gray-100 transition-colors">About</a>
+                <a href="#skills" class="text-white hover:text-[#085158] font-medium rounded-md p-2 hover:bg-gray-100 transition-colors">Skills</a>
+                <a href="#portfolio" class="text-white hover:text-[#085158] font-medium rounded-md p-2 hover:bg-gray-100 transition-colors">Portfolio</a>
+                <a href="#contact" class="text-white hover:text-[#085158] font-medium rounded-md p-2 hover:bg-gray-100 transition-colors">Contact</a>
+            </div>
+            <!-- Mobile Menu Button -->
+            <button id="mobile-menu-button" class="md:hidden text-gray-600 hover:text-blue-600 focus:outline-none">
+                <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+                </svg>
+            </button>
+        </nav>
+        <!-- Mobile Menu -->
+        <div id="mobile-menu" class="md:hidden hidden bg-white py-2 mt-2 border-t border-gray-200">
+            <a href="#about" class="block px-4 py-2 text-gray-800 hover:bg-gray-100 rounded-md transition-colors">About</a>
+            <a href="#skills" class="block px-4 py-2 text-gray-800 hover:bg-gray-100 rounded-md transition-colors">Skills</a>
+            <a href="#portfolio" class="block px-4 py-2 text-gray-800 hover:bg-gray-100 rounded-md transition-colors">Portfolio</a>
+            <a href="#contact" class="block px-4 py-2 text-gray-800 hover:bg-gray-100 rounded-md transition-colors">Contact</a>
+        </div>
+    </header>
+
+    <main class="pt-24 pb-12"> <!-- Added padding-top to account for fixed header -->
+
+        <!-- Hero Section -->
+        <section id="hero" class="bg-[#085158] text-white py-20 md:py-32 text-center rounded-xl mx-4 md:mx-auto max-w-6xl mt-8">
+            <div class="container mx-auto px-4">
+                <img src="/Me.jpg" alt="Profile Picture" class="rounded-full w-36 h-36 mx-auto mb-6 border-4 border-white shadow-lg">
+                <h1 class="text-4xl md:text-6xl font-extrabold mb-4 leading-tight">Hi, I'm Favour Findy</h1>
+                <p class="text-xl md:text-2xl font-light mb-8">A passionate buolder, building amazing things.</p>
+                <a href="#portfolio" class="bg-white text-[#085158] hover:bg-gray-100 px-8 py-3 rounded-full text-lg font-semibold shadow-lg transition-all duration-300 ease-in-out transform hover:scale-105">View My Work</a>
+            </div>
+        </section>
+
+        <!-- About Me Section -->
+        <section id="about" class="container mx-auto px-4 py-16 md:py-24 max-w-6xl">
+            <h2 class="text-3xl md:text-4xl font-bold text-gray-800 mb-8 section-title">About Me</h2>
+            <div class="bg-white p-8 rounded-xl shadow-md">
+                <p class="text-lg leading-relaxed mb-4">
+                    Favour Findy is a frontend developer passionate about building clean, responsive, and user-focused web interfaces using modern tools like React and Tailwind CSS. Currently, I'm upskilling in blockchain development, with the goal of becoming a fullstack blockchain developer.
+                    My drive goes beyond just writing code — I'm passionate about creating solutions that address real-life problems, especially through the power and transparency that blockchain offers. I believe tech should serve people, and I approach every project with purpose, excellence, and a heart to make lasting impact.
+                </p>
+                <p class="text-lg leading-relaxed">
+                    Let's create something meaningful together.
+                </p>
+            </div>
+        </section>
+
+        <!-- Skills Section -->
+        <section id="skills" class="container mx-auto px-4 py-16 md:py-24 max-w-6xl">
+            <h2 class="text-3xl md:text-4xl font-bold text-gray-800 mb-8 section-title">Skills</h2>
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+                <!-- Skill Card 1 -->
+                <div class="card p-6 text-center">
+                    <h3 class="text-xl font-semibold text-gray-800 mb-3">Front-end Development</h3>
+                    <p class="text-gray-600">HTML5, CSS3, JavaScript (ES6+), React, Tailwind CSS, Responsive Design</p>
+                </div>
+                <!-- Skill Card 2 -->
+                <div class="card p-6 text-center">
+                    <h3 class="text-xl font-semibold text-gray-800 mb-3">Tools & Workflow</h3>
+                    <p class="text-gray-600">Git & GitHub, VS Code, Figma, Netlify/Vercel</p>
+                </div>
+                <!-- Skill Card 3 -->
+                <div class="card p-6 text-center">
+                    <h3 class="text-xl font-semibold text-gray-800 mb-3">Soft Skills/Values</h3>
+                    <p class="text-gray-600">Problem Solving, Time Management, Time Management, Team Spirit,</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Portfolio Section -->
+        <section id="portfolio" class="container mx-auto px-4 py-16 md:py-24 max-w-6xl">
+            <h2 class="text-3xl md:text-4xl font-bold text-gray-800 mb-8 section-title">My Portfolio</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Project Card 1 -->
+                <div class="card overflow-hidden">
+                    <img src="https://placehold.co/600x400/ADD8E6/000000?text=Project+1" alt="Project 1" class="w-full h-48 object-cover">
+                    <div class="p-6">
+                        <h3 class="text-xl font-semibold text-gray-800 mb-2">Expenses-Tracker</h3>
+                        <p class="text-gray-600 mb-4">A brief description of Project One, highlighting its purpose and the technologies used. This could be a web application, a design project, etc.</p>
+                        <a href="#" class="text-blue-600 hover:text-blue-800 font-medium transition-colors">View Project &rarr;</a>
+                    </div>
+                </div>
+                <!-- Project Card 2 -->
+                <div class="card overflow-hidden">
+                    <img src="https://placehold.co/600x400/ADD8E6/000000?text=Project+2" alt="Project 2" class="w-full h-48 object-cover">
+                    <div class="p-6">
+                        <h3 class="text-xl font-semibold text-gray-800 mb-2">BarzOnly</h3>
+                        <p class="text-gray-600 mb-4">A brief description of Project Two, highlighting its purpose and the technologies used. Focus on your contribution and the impact.</p>
+                        <a href="#" class="text-blue-600 hover:text-blue-800 font-medium transition-colors">View Project &rarr;</a>
+                    </div>
+                </div>
+                <!-- Project Card 3 -->
+                <div class="card overflow-hidden">
+                    <img src="https://placehold.co/600x400/ADD8E6/000000?text=Project+3" alt="Project 3" class="w-full h-48 object-cover">
+                    <div class="p-6">
+                        <h3 class="text-xl font-semibold text-gray-800 mb-2">Card-Memory Game</h3>
+                        <p class="text-gray-600 mb-4">A brief description of Project Three, highlighting its purpose and the technologies used. Add a link to the live demo or GitHub repo.</p>
+                        <a href="#" class="text-blue-600 hover:text-blue-800 font-medium transition-colors">View Project &rarr;</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact" class="container mx-auto px-4 py-16 md:py-24 max-w-6xl">
+            <h2 class="text-3xl md:text-4xl font-bold text-gray-800 mb-8 section-title">Contact Me</h2>
+            <div class="bg-white p-8 rounded-xl shadow-md">
+                <p class="text-lg leading-relaxed mb-6">
+                    Interested in collaborating or just want to say hello? Feel free to reach out!
+                </p>
+                <form action="#" method="POST" class="space-y-6">
+                    <div>
+                        <label for="name" class="block text-sm font-medium text-gray-700 mb-1">Name</label>
+                        <input type="text" id="name" name="name" class="mt-1 block w-full px-4 py-2 border border-gray-300 rounded-md shadow-sm focus:ring-blue-500 focus:border-blue-500 sm:text-sm" placeholder="Your Name" required>
+                    </div>
+                    <div>
+                        <label for="email" class="block text-sm font-medium text-gray-700 mb-1">Email</label>
+                        <input type="email" id="email" name="email" class="mt-1 block w-full px-4 py-2 border border-gray-300 rounded-md shadow-sm focus:ring-blue-500 focus:border-blue-500 sm:text-sm" placeholder="your.email@example.com" required>
+                    </div>
+                    <div>
+                        <label for="message" class="block text-sm font-medium text-gray-700 mb-1">Message</label>
+                        <textarea id="message" name="message" rows="5" class="mt-1 block w-full px-4 py-2 border border-gray-300 rounded-md shadow-sm focus:ring-blue-500 focus:border-blue-500 sm:text-sm" placeholder="Your message..." required></textarea>
+                    </div>
+                    <button type="submit" class="inline-flex justify-center py-3 px-6 border border-transparent shadow-sm text-base font-medium rounded-md text-white bg-blue-600 hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-blue-500 transition-colors duration-200">
+                        Send Message
+                    </button>
+                </form>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-gray-800 text-white py-8 text-center rounded-t-xl mx-4 md:mx-auto max-w-6xl mb-4">
+        <div class="container mx-auto px-4">
+            <p>&copy; 2025 Your Name. All rights reserved.</p>
+            <div class="flex justify-center space-x-6 mt-4">
+                <a href="#" class="text-gray-400 hover:text-white transition-colors">LinkedIn</a>
+                <a href="#" class="text-gray-400 hover:text-white transition-colors">GitHub</a>
+                <a href="#" class="text-gray-400 hover:text-white transition-colors">Twitter</a>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Smooth scrolling for navigation links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+
+                // Close mobile menu if open
+                if (mobileMenu.classList.contains('block')) {
+                    mobileMenu.classList.add('hidden');
+                    mobileMenu.classList.remove('block');
+                }
+            });
+        });
+
+        // Mobile menu toggle
+        const mobileMenuButton = document.getElementById('mobile-menu-button');
+        const mobileMenu = document.getElementById('mobile-menu');
+
+        mobileMenuButton.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+            mobileMenu.classList.toggle('block');
+        });
+    </script>
+</body>
+</html>
