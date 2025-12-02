@@ -48,12 +48,11 @@
     <header class="bg-[#085158] shadow-md py-4 px-6 md:px-12 fixed top-0 left-0 w-full z-10">
         <nav class="container mx-auto flex justify-between items-center">
             <img src="/Favour findy.png" alt="logo" class="w-40">
-            <!-- <a href="#" class="text-2xl font-bold text-gray-800 rounded-md p-2 hover:bg-gray-100 transition-colors">Favour Findy</a> -->
             <div class="hidden md:flex space-x-6">
-                <a href="#about" class="text-white hover:text-[#085158]font-medium rounded-md p-2 hover:bg-gray-100 transition-colors">About</a>
-                <a href="#skills" class="text-white hover:text-[#085158] font-medium rounded-md p-2 hover:bg-gray-100 transition-colors">Skills</a>
-                <a href="#portfolio" class="text-white hover:text-[#085158] font-medium rounded-md p-2 hover:bg-gray-100 transition-colors">Portfolio</a>
-                <a href="#contact" class="text-white hover:text-[#085158] font-medium rounded-md p-2 hover:bg-gray-100 transition-colors">Contact</a>
+                <a href="#about" class="text-white hover:text-[#fedb27] font-medium rounded-md p-2 transition-colors">About</a>
+                <a href="#skills" class="text-white hover:text-[#fedb27] font-medium rounded-md p-2 transition-colors">Skills</a>
+                <a href="#portfolio" class="text-white hover:text-[#fedb27] font-medium rounded-md p-2 transition-colors">Portfolio</a>
+                <a href="#contact" class="text-white hover:text-[#fedb27] font-medium rounded-md p-2 transition-colors">Contact</a>
             </div>
             <!-- Mobile Menu Button -->
             <button id="mobile-menu-button" class="md:hidden text-white hover:text-[#fedb27] focus:outline-none">
@@ -74,56 +73,142 @@
     <main class="pt-24 pb-12"> <!-- Added padding-top to account for fixed header -->
 
         <!-- Hero Section -->
-        <section id="hero" class="bg-[#085158] text-white py-20 md:py-32 text-center rounded-xl mx-4 md:mx-auto max-w-6xl mt-8">
+        <section id="hero" class="bg-[#085158] text-white py-20 md:py-32 text-center rounded-xl mx-4 md:mx-auto max-w-6xl">
             <div class="container mx-auto px-4">
                 <img src="/Me.jpg" alt="Profile Picture" class="rounded-full w-36 h-36 mx-auto mb-6 border-4 border-white shadow-lg">
                 <h1 class="text-4xl md:text-6xl font-extrabold mb-4 leading-tight">Hi, I'm Favour Findy</h1>
-                <p class="text-xl md:text-2xl font-light mb-8">A passionate solution builder.</p>
+                <p class="text-xl md:text-2xl font-light mb-8">A Smart Contract Developer & Frontend Engineer building secure solutions.</p>
                 <a href="#portfolio" class="bg-white text-[#085158] hover:bg-gray-100 px-8 py-3 rounded-full text-lg font-semibold shadow-lg transition-all duration-300 ease-in-out transform hover:scale-105">View My Work</a>
             </div>
         </section>
 
-        <!-- About Me Section -->
-        <section id="about" class="container mx-auto px-4 py-16 md:py-24 max-w-6xl">
+        <!-- About Me Section | Reduced padding -->
+        <section id="about" class="container mx-auto px-4 py-8 md:py-12 max-w-6xl">
             <h2 class="text-3xl md:text-4xl font-bold text-gray-800 mb-8 section-title">About Me</h2>
             <div class="bg-white p-8 rounded-xl shadow-md">
                 <p class="text-lg leading-relaxed mb-4">
-                    Favour Findy is a frontend developer passionate about building clean, responsive, and user-focused web interfaces using modern tools like React and Tailwind CSS. Currently, I'm upskilling in blockchain development, with the goal of becoming a fullstack blockchain developer.
-                    My drive goes beyond just writing code — I'm passionate about creating solutions that address real-life problems, especially through the power and transparency that blockchain offers. I believe tech should serve people, and I approach every project with purpose, excellence, and a heart to make lasting impact.
+                    I am a Smart Contract Developer with strong hands-on experience designing, implementing, testing, and integrating secure, modular Solidity contracts using <b>Hardhat, Foundry, and Viem</b>. I specialize in building event-driven contracts and connecting them to production-ready Next.js/React frontends.
+                </p>
+                <p class="text-lg leading-relaxed mb-4">
+                    While not yet deployed on mainnet, I’ve built multiple real-world contracts end-to-end (ERC20, reward systems, voting, savings contracts) and collaborated in multi-developer environments. I am deeply committed to growing into a world-class blockchain engineer and currently building <b>SliqPay</b>, a Web2/Web3 fintech platform for African markets.
                 </p>
                 <p class="text-lg leading-relaxed">
-                    Let's create something meaningful together.
+                    I approach every project with purpose, excellence, and a heart to make a lasting impact. Let's create something meaningful together.
                 </p>
             </div>
         </section>
 
-        <!-- Skills Section -->
-        <section id="skills" class="container mx-auto px-4 py-16 md:py-24 max-w-6xl">
+        <!-- Skills Section | Reduced padding, split into more categories with bullets -->
+        <section id="skills" class="container mx-auto px-4 py-8 md:py-12 max-w-6xl">
             <h2 class="text-3xl md:text-4xl font-bold text-gray-800 mb-8 section-title">Skills</h2>
             <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
-                <!-- Skill Card 1 -->
-                <div class="card p-6 text-center">
-                    <h3 class="text-xl font-semibold text-gray-800 mb-3">Front-end Development</h3>
-                    <p class="text-gray-600">HTML5, CSS3, JavaScript (ES6+), React, Tailwind CSS, Responsive Design</p>
+                <!-- Skill Card 1: Smart Contracts -->
+                <div class="card p-6">
+                    <h3 class="text-xl font-semibold text-[#085158] mb-3">Smart Contracts</h3>
+                    <ul class="text-gray-600 list-disc pl-5 space-y-1">
+                        <li>Solidity</li>
+                        <li>OpenZeppelin</li>
+                        <li>Event-Driven Design</li>
+                        <li>Clean Architecture</li>
+                    </ul>
                 </div>
-                <!-- Skill Card 2 -->
-                <div class="card p-6 text-center">
-                    <h3 class="text-xl font-semibold text-gray-800 mb-3">Tools & Workflow</h3>
-                    <p class="text-gray-600">Git & GitHub, VS Code, Figma, Netlify/Vercel</p>
+                
+                <!-- Skill Card 2: Backend Tools -->
+                <div class="card p-6">
+                    <h3 class="text-xl font-semibold text-[#085158] mb-3">Backend Tools</h3>
+                    <ul class="text-gray-600 list-disc pl-5 space-y-1">
+                        <li>Hardhat</li>
+                        <li>Foundry</li>
+                        <li>Viem</li>
+                        <li>Ignition</li>
+                    </ul>
                 </div>
-                <!-- Skill Card 3 -->
-                <div class="card p-6 text-center">
-                    <h3 class="text-xl font-semibold text-gray-800 mb-3">Soft Skills/Values</h3>
-                    <p class="text-gray-600">Problem Solving, Time Management, Time Management, Team Spirit,</p>
+                
+                <!-- Skill Card 3: Frontend -->
+                <div class="card p-6">
+                    <h3 class="text-xl font-semibold text-[#085158] mb-3">Frontend</h3>
+                    <ul class="text-gray-600 list-disc pl-5 space-y-1">
+                        <li>Next.js</li>
+                        <li>React.js</li>
+                        <li>Zustand</li>
+                        <li>TypeScript</li>
+                        <li>Tailwind CSS</li>
+                        <li>Responsive Design</li>
+                    </ul>
+                </div>
+                
+                <!-- Skill Card 4: Integration & APIs -->
+                <div class="card p-6">
+                    <h3 class="text-xl font-semibold text-[#085158] mb-3">Integration & APIs</h3>
+                    <ul class="text-gray-600 list-disc pl-5 space-y-1">
+                        <li>Fetch API</li>
+                        <li>API Integration</li>
+                        <li>Web3 Integration</li>
+                    </ul>
+                </div>
+                
+                <!-- Skill Card 5: Tooling & Workflow -->
+                <div class="card p-6">
+                    <h3 class="text-xl font-semibold text-[#085158] mb-3">Tooling & Workflow</h3>
+                    <ul class="text-gray-600 list-disc pl-5 space-y-1">
+                        <li>Git & GitHub</li>
+                        <li>Git Bash</li>
+                        <li>VS Code</li>
+                        <li>Ubuntu</li>
+                        <li>Self-Review Auditing</li>
+                    </ul>
                 </div>
             </div>
         </section>
 
-        <!-- Portfolio Section -->
-        <section id="portfolio" class="container mx-auto px-4 py-16 md:py-24 max-w-6xl">
+        <!-- Portfolio Section | Reduced padding, adjusted grids to lg:grid-cols-3 for balance, pruned projects -->
+        <section id="portfolio" class="container mx-auto px-4 py-8 md:py-12 max-w-6xl">
             <h2 class="text-3xl md:text-4xl font-bold text-gray-800 mb-8 section-title">My Portfolio</h2>
+            
+            <h3 class="text-2xl font-semibold text-gray-700 mb-6 border-l-4 border-[#fedb27] pl-3">Blockchain & Web3 Solutions</h3>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mb-12">
+                <!-- PROJECT 1: SliqPay -->
+                <div class="card overflow-hidden">
+                    <img src="https://placehold.co/600x400/0E6A72/ffffff?text=SliqPay+Web3" alt="SliqPay Platform" class="w-full h-32 object-cover">
+                    <div class="p-4">
+                        <h3 class="text-lg font-semibold text-gray-800 mb-1">SliqPay (In Progress)</h3>
+                        <p class="text-sm text-gray-600 mb-3">Fintech & Web3 Platform</p>
+                        <p class="text-gray-600 mb-4 text-sm">Building a phased platform for Web2/Web3 bill payments, focusing on contract architecture for stablecoin utility settlement. Integrated secure Viem calls. <br>
+                            <span class="text-l font-bold">GitHub:</span> 
+                            <a href="https://github.com/Findy-WID/SliqPay" class="text-[#085158] underline">SliqPay</a>
+                        </p>
+                        <span class="text-[#085158] font-medium text-sm">Next.js | Solidity | Viem</span>
+                    </div>
+                </div>
+
+                <!-- PROJECT 2: Digital Voting DApp -->
+                <div class="card overflow-hidden">
+                    <img src="https://placehold.co/600x400/A8A29E/ffffff?text=Voting+DApp" alt="Digital Voting Contract" class="w-full h-32 object-cover">
+                    <div class="p-4">
+                        <h3 class="text-lg font-semibold text-gray-800 mb-1">Digital Voting DApp</h3>
+                        <p class="text-sm text-gray-600 mb-3">Collaborative Web3 integration</p>
+                        <p class="text-gray-600 mb-4 text-sm">Implemented voter registration, eligibility filtering, and tallying mechanics. Led the Web3 integration and deployment architecture. <br>
+                            <span class="text-l font-bold">GitHub:</span> 
+                            <a href="https://github.com/Mike143456/Digital-voting-system" class="text-[#085158] underline">Digital Voting</a>
+                        </p>
+                        <span class="text-[#085158] font-medium text-sm">Solidity | Web3 Integration</span>
+                    </div>
+                </div>
+
+                <!-- Placeholder for future project (optional, can remove if not wanted) -->
+                <!-- <div class="card overflow-hidden opacity-50">
+                    <img src="https://placehold.co/600x400/gray/white?text=Coming+Soon" alt="Future Project" class="w-full h-32 object-cover">
+                    <div class="p-4">
+                        <h3 class="text-lg font-semibold text-gray-800 mb-1">Coming Soon</h3>
+                        <p class="text-sm text-gray-600 mb-3">Next Blockchain Project</p>
+                        <p class="text-gray-600 mb-4 text-sm">Stay tuned for more!</p>
+                    </div>
+                </div> -->
+            </div>
+            
+            <h3 class="text-2xl font-semibold text-gray-700 mb-6 border-l-4 border-[#fedb27] pl-3">Frontend Applications</h3>
             <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-                <!-- Project Card 1 -->
+                <!-- EXISTING PROJECT 1: trackIt - Expense Tracker -->
                 <div class="card overflow-hidden">
                     <img src="/trackIt.jpg" alt="Project 1" class="w-full h-48 object-cover">
                     <div class="p-6">
@@ -135,11 +220,11 @@
                                   <a href="https://github.com/Findy-WID/trackIt" class="text-[#085158] underline">trackIt</a>
                             </span>
                         </p>
-                        <a href="https://trackit-sand.vercel.app/" class="text-[#085158] hover:text-green-700 font-medium transition-colors">View Project &rarr;</a>
+                        <a href="https://trackit-sand.vercel.app/" class="text-[#085158] hover:text-[#fedb27] font-medium transition-colors">View Project &rarr;</a>
                     </div>
                 </div>
 
-                <!-- Project Card 2 -->
+                <!-- EXISTING PROJECT 2: BarzOnly2 -->
                 <div class="card overflow-hidden">
                     <img src="/barzonlyLogo.png" alt="Project 2" class="w-full h-48 object-cover">
                     <div class="p-6">
@@ -151,11 +236,11 @@
                                   <a href="https://github.com/Findy-WID/BarzOnly2" class="text-[#085158] underline">BarzOnly2</a>
                             </span>
                         </p>
-                        <a href="https://barz-only2.vercel.app/" class="text-[#085158] hover:text-green-700 font-medium transition-colors">View Project &rarr;</a>
+                        <a href="https://barz-only2.vercel.app/" class="text-[#085158] hover:text-[#fedb27] font-medium transition-colors">View Project &rarr;</a>
                     </div>
                 </div>
 
-                <!-- Project Card 3 -->
+                <!-- EXISTING PROJECT 3: Card-Memory Game -->
                 <div class="card overflow-hidden">
                     <img src="/CMG.jpg" alt="Project 3" class="w-full h-48 object-cover">
                     <div class="p-6">
@@ -168,62 +253,38 @@
                                   <a href="https://github.com/Findy-WID/Card-Memory-Game" class="text-[#085158] underline">Card-Memory Game</a>
                             </span>
                         </p>
-                        <a href="https://card-memory-game-lac.vercel.app/" class="text-[#085158] hover:text-green-700 font-medium transition-colors">View Project &rarr;</a>
+                        <a href="https://card-memory-game-lac.vercel.app/" class="text-[#085158] hover:text-[#fedb27] font-medium transition-colors">View Project &rarr;</a>
                     </div>
                 </div>
             </div>
         </section>
 
-        <!-- Contact Section -->
-        <!-- <section id="contact" class="container mx-auto px-4 py-16 md:py-24 max-w-6xl">
-            <h2 class="text-3xl md:text-4xl font-bold text-gray-800 mb-8 section-title">Contact Me</h2>
-            <div class="bg-white p-8 rounded-xl shadow-md">
-                <p class="text-lg leading-relaxed mb-6">
-                    Interested in collaborating or just want to say hello? Feel free to reach out!
-                </p>
-                <form action="#" method="POST" class="space-y-6">
-                    <div>
-                        <label for="name" class="block text-sm font-medium text-gray-700 mb-1">Name</label>
-                        <input type="text" id="name" name="name" class="mt-1 block w-full px-4 py-2 border border-gray-300 rounded-md shadow-sm focus:ring-blue-500 focus:border-blue-500 sm:text-sm" placeholder="Your Name" required>
-                    </div>
-                    <div>
-                        <label for="email" class="block text-sm font-medium text-gray-700 mb-1">Email</label>
-                        <input type="email" id="email" name="email" class="mt-1 block w-full px-4 py-2 border border-gray-300 rounded-md shadow-sm focus:ring-blue-500 focus:border-blue-500 sm:text-sm" placeholder="your.email@example.com" required>
-                    </div>
-                    <div>
-                        <label for="message" class="block text-sm font-medium text-gray-700 mb-1">Message</label>
-                        <textarea id="message" name="message" rows="5" class="mt-1 block w-full px-4 py-2 border border-gray-300 rounded-md shadow-sm focus:ring-blue-500 focus:border-blue-500 sm:text-sm" placeholder="Your message..." required></textarea>
-                    </div>
-                    <button type="submit" class="inline-flex justify-center py-3 px-6 border border-transparent shadow-sm text-base font-medium rounded-md text-white bg-[#085158] hover:bg-[#0E6A72] focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-blue-500 transition-colors duration-200">
-                        Send Message
-                    </button>
-                </form>
-            </div>
-        </section> -->
-        <section id="contact" class="container mx-auto px-4 py-16 md:py-24 max-w-6xl">
+        <!-- Contact Section | Reduced padding -->
+        <section id="contact" class="container mx-auto px-4 py-8 md:py-12 max-w-6xl">
             <h2 class="text-3xl md:text-4xl font-bold text-gray-800 mb-8 section-title">Contact Me</h2>
             <div class="bg-white p-8 rounded-xl shadow-md">
                 <p class="text-lg leading-relaxed mb-6">
                     Interested in collaborating or just want to say hello? Feel free to reach out!
                 </p>
                 <div class="mt-6">
-                    <a href="https://t.me/findy_dev" target="_blank"
-                    class="inline-flex justify-center py-3 px-6 border border-transparent shadow-sm text-base font-medium rounded-md text-white bg-[#085158] hover:bg-[#0E6A72] focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-blue-500 transition-colors duration-200">
-                        Message Me on Telegram
+                    <a href="https://formsubmit.co/favouritefindy@gmail.com" 
+                        target="_blank"
+                        class="inline-flex justify-center py-3 px-6 border border-transparent shadow-sm text-base font-medium rounded-md text-white bg-[#085158] hover:bg-[#0E6A72] transition-colors duration-200">
+                            Send Me an Email
                     </a>
                 </div>
             </div>
         </section>
     </main>
 
-    <!-- Footer -->
-    <footer class="bg-gray-800 text-white py-8 text-center rounded-t-xl mx-4 md:mx-auto max-w-6xl mb-4">
+    <!-- Footer | Updated colors -->
+    <footer class="bg-[#085158] text-white py-8 text-center rounded-t-xl mx-4 md:mx-auto max-w-6xl mb-4">
         <div class="container mx-auto px-4">
-            <p>&copy; 2025 Orjimazi Favour. All rights reserved.</p>
+            <p class="text-[#fedb27]">&copy; 2025 Orjimazi Favour. All rights reserved.</p>
             <div class="flex justify-center space-x-6 mt-4">
-                <a href="https://www.linkedin.com/in/favour-orjimazi/" class="text-gray-400 hover:text-white transition-colors">LinkedIn</a>
-                <a href="https://github.com/Findy-WID" class="text-gray-400 hover:text-white transition-colors">GitHub</a>
-                <a href="https://x.com/findy_dev?t=wppyIXtcD6WhdK5WDk2DPA&s=09" class="text-gray-400 hover:text-white transition-colors">Twitter</a>
+                <a href="https://www.linkedin.com/in/favour-orjimazi/" class="text-gray-300 hover:text-[#fedb27] transition-colors">LinkedIn</a>
+                <a href="https://github.com/Findy-WID" class="text-gray-300 hover:text-[#fedb27] transition-colors">GitHub</a>
+                <a href="https://x.com/findy_dev?t=wppyIXtcD6WhdK5WDk2DPA&s=09" class="text-gray-300 hover:text-[#fedb27] transition-colors">Twitter</a>
             </div>
         </div>
     </footer>
